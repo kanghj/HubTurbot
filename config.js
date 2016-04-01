@@ -12,3 +12,5 @@ exports.github = {
     pathPrefix: mergedConfig.ghePathPrefix,
     port: mergedConfig.ghePort || 443
 };
+
+exports.projectLead = 'projectLeadPlaceholder'

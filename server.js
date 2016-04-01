@@ -263,7 +263,7 @@ async function handlePRLabelChange(data) {
           user: data.repository.owner.login,
           repo: data.repository.name,
           number: data.pull_request.number,
-          body: "Ready to review, please assign a reviewer. @LowWeiLin @dariusf"
+          body: "Ready to review, please assign a reviewer. " + config.projectLead
         });
       }
     } else if (data.label.name.toLowerCase().indexOf("critical") > 0) {
